@@ -17,7 +17,7 @@ def bisection(function, a, b):  # finds where the function becomes 0 in [a,b] us
         mid = (start + end) / 2
         while abs(start - mid) > 10**-7:  # until we achieve precise equals to 10^-7
             if function(mid) == 0:
-                return mid  # 他们互为相反数了s
+                return mid
             elif function(mid) * function(start) < 0:
                 end = mid
             else:
