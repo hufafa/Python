@@ -14,6 +14,7 @@ def bisection(function, a, b):  # finds where the function becomes 0 in [a,b] us
         print("couldn't find root in [a,b]")
         return
     else:
+        # test
         mid = (start + end) / 2
         while abs(start - mid) > 10**-7:  # until we achieve precise equals to 10^-7
             if function(mid) == 0:
